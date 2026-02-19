@@ -36,7 +36,7 @@ Edit `feeds.config.json`:
 
 ```json
 {
-  "users": ["matt", "4thhubbard", "otto42", "coffee2code", "barry"],
+  "users": ["courane01", "username"],
   "limit": 30
 }
 ```
@@ -51,10 +51,10 @@ Go to **Actions > Generate RSS Feeds > Run workflow** to trigger immediately.
 
 ```bash
 # Generate a single feed to stdout
-node dist/cli.js --user matt
+node dist/cli.js --user courane01
 
 # Generate a single feed to a file
-node dist/cli.js --user matt --out matt.xml --verbose
+node dist/cli.js --user courane01 --out courane01.xml --verbose
 
 # Generate all feeds from config
 npm run generate
