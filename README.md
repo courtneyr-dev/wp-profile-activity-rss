@@ -10,7 +10,6 @@ Once deployed, feeds are available at:
 https://<your-username>.github.io/wp-profile-activity-rss/<user>.xml
 ```
 
-Current users: `matt`, `4thhubbard`, `otto42`, `coffee2code`, `barry`
 
 ## Setup
 
