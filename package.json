@@ -1,0 +1,43 @@
+{
+  "name": "wp-profile-activity-rss",
+  "version": "1.0.0",
+  "description": "Generate RSS 2.0 feeds from WordPress.org profile activity streams",
+  "type": "module",
+  "bin": {
+    "wp-profile-activity-rss": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "generate": "node dist/generate-all.js",
+    "lint": "eslint src/",
+    "format": "prettier --write 'src/**/*.ts' 'test/**/*.ts'"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "wordpress",
+    "rss",
+    "profile",
+    "activity",
+    "feed"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "commander": "^12.1.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "eslint": "^9.0.0",
+    "prettier": "^3.3.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0",
+    "@eslint/js": "^9.0.0",
+    "typescript-eslint": "^8.0.0"
+  }
+}
